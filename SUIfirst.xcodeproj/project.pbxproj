@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC4E73FD29817066008AF866 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E73FC29817066008AF866 /* DemoView.swift */; };
+		FC5AAD93293F3A4E001140AF /* ZenDots-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */; };
+		FC5AAD96293F5208001140AF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AAD95293F5208001140AF /* InfoView.swift */; };
 		FC5DEC182939513900B6FCB9 /* SUIfirstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DEC172939513900B6FCB9 /* SUIfirstApp.swift */; };
 		FC5DEC1A2939513900B6FCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DEC192939513900B6FCB9 /* ContentView.swift */; };
 		FC5DEC1C2939513B00B6FCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5DEC1B2939513B00B6FCB9 /* Assets.xcassets */; };
@@ -14,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC4E73FC29817066008AF866 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenDots-Regular.ttf"; sourceTree = "<group>"; };
+		FC5AAD94293F3BD0001140AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC5AAD95293F5208001140AF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		FC5DEC142939513900B6FCB9 /* SUIfirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUIfirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5DEC172939513900B6FCB9 /* SUIfirstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUIfirstApp.swift; sourceTree = "<group>"; };
 		FC5DEC192939513900B6FCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC5AAD91293F3A3B001140AF /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		FC5DEC0B2939513900B6FCB9 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +66,14 @@
 		FC5DEC162939513900B6FCB9 /* SUIfirst */ = {
 			isa = PBXGroup;
 			children = (
+				FC5AAD94293F3BD0001140AF /* Info.plist */,
+				FC5AAD91293F3A3B001140AF /* fonts */,
 				FC5DEC172939513900B6FCB9 /* SUIfirstApp.swift */,
 				FC5DEC192939513900B6FCB9 /* ContentView.swift */,
+				FC5AAD95293F5208001140AF /* InfoView.swift */,
 				FC5DEC1B2939513B00B6FCB9 /* Assets.xcassets */,
 				FC5DEC1D2939513B00B6FCB9 /* Preview Content */,
+				FC4E73FC29817066008AF866 /* DemoView.swift */,
 			);
 			path = SUIfirst;
 			sourceTree = "<group>";
@@ -127,6 +146,7 @@
 			files = (
 				FC5DEC1F2939513B00B6FCB9 /* Preview Assets.xcassets in Resources */,
 				FC5DEC1C2939513B00B6FCB9 /* Assets.xcassets in Resources */,
+				FC5AAD93293F3A4E001140AF /* ZenDots-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5DEC1A2939513900B6FCB9 /* ContentView.swift in Sources */,
+				FC4E73FD29817066008AF866 /* DemoView.swift in Sources */,
+				FC5AAD96293F5208001140AF /* InfoView.swift in Sources */,
 				FC5DEC182939513900B6FCB9 /* SUIfirstApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +292,7 @@
 				DEVELOPMENT_TEAM = RCUPNKG6W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SUIfirst/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +322,7 @@
 				DEVELOPMENT_TEAM = RCUPNKG6W5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SUIfirst/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
