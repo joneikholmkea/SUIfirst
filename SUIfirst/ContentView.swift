@@ -16,7 +16,7 @@ struct ContentView: View {
             
             VStack {
                 
-                Text("Hello, world! how are you")
+                Text("Hello, world! how are you??")
                     .font(.system(size: 33))
                     .fontWeight(.bold)
                     .underline()
