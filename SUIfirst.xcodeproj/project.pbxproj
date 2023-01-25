@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC4E73FD29817066008AF866 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E73FC29817066008AF866 /* DemoView.swift */; };
+		FC4E73FF29818BA6008AF866 /* DeleteMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */; };
 		FC5AAD93293F3A4E001140AF /* ZenDots-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */; };
 		FC5AAD96293F5208001140AF /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5AAD95293F5208001140AF /* InfoView.swift */; };
 		FC5DEC182939513900B6FCB9 /* SUIfirstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DEC172939513900B6FCB9 /* SUIfirstApp.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		FC4E73FC29817066008AF866 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMeView.swift; sourceTree = "<group>"; };
 		FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenDots-Regular.ttf"; sourceTree = "<group>"; };
 		FC5AAD94293F3BD0001140AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FC5AAD95293F5208001140AF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				FC5DEC1B2939513B00B6FCB9 /* Assets.xcassets */,
 				FC5DEC1D2939513B00B6FCB9 /* Preview Content */,
 				FC4E73FC29817066008AF866 /* DemoView.swift */,
+				FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */,
 			);
 			path = SUIfirst;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				FC5DEC1A2939513900B6FCB9 /* ContentView.swift in Sources */,
 				FC4E73FD29817066008AF866 /* DemoView.swift in Sources */,
+				FC4E73FF29818BA6008AF866 /* DeleteMeView.swift in Sources */,
 				FC5AAD96293F5208001140AF /* InfoView.swift in Sources */,
 				FC5DEC182939513900B6FCB9 /* SUIfirstApp.swift in Sources */,
 			);
