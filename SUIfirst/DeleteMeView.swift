@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DeleteMeView: View {
     var body: some View {
-        Text("Hello, World! is a wonderful start")
+        Text("Hello, World! is a wonderful start today")
             .bold()
             .font(Font.custom("Georgia", size:34))
     }
