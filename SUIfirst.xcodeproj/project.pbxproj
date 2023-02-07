@@ -19,6 +19,7 @@
 		FC5DEC1F2939513B00B6FCB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5DEC1E2939513B00B6FCB9 /* Preview Assets.xcassets */; };
 		FC743C0B299233A700AF1CFB /* ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C09299233A700AF1CFB /* ListDemo.swift */; };
 		FC743C0C299233A700AF1CFB /* DetailViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */; };
+		FC743C2A2992423600AF1CFB /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C292992423600AF1CFB /* MyFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FC5DEC1E2939513B00B6FCB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC743C09299233A700AF1CFB /* ListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDemo.swift; sourceTree = "<group>"; };
 		FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewDemo.swift; sourceTree = "<group>"; };
+		FC743C292992423600AF1CFB /* MyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */,
 				FC06FACC2983FB700021E49B /* MyLogic.swift */,
 				FC06FACE2983FF7A0021E49B /* DeleteMe2.swift */,
+				FC743C292992423600AF1CFB /* MyFileManager.swift */,
 			);
 			path = SUIfirst;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				FC4E73FD29817066008AF866 /* DemoView.swift in Sources */,
 				FC743C0B299233A700AF1CFB /* ListDemo.swift in Sources */,
 				FC06FACD2983FB700021E49B /* MyLogic.swift in Sources */,
+				FC743C2A2992423600AF1CFB /* MyFileManager.swift in Sources */,
 				FC06FACF2983FF7A0021E49B /* DeleteMe2.swift in Sources */,
 				FC4E73FF29818BA6008AF866 /* DeleteMeView.swift in Sources */,
 				FC5AAD96293F5208001140AF /* InfoView.swift in Sources */,

@@ -9,14 +9,14 @@ import SwiftUI
 
 struct DetailViewDemo: View {
     
-    let message:String
+    @Binding var message:String
     var body: some View {
-        Text(message)
+        TextField("Enter your name", text: $message)
     }
 }
 
 struct DetailViewDemo_Previews: PreviewProvider {
     static var previews: some View {
-        DetailViewDemo(message: "hello")
+        DetailViewDemo(message: .constant("hej"))
     }
 }

@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct ListDemo: View {
-    @State var items = [
-        Item(title: "TutorialKart"),
-        Item(title: "Swift Tutorial")
-    ]
+    @ObservedObject var fileMan = MyFileManager()
     @State private var newText: String = ""
+    
     var body: some View {
         VStack{
-            TextField("Enter your name", text: $newText)
+            TextField("Enter text", text: $newText)
             Button {
-                items.append(Item(title: newText))
+                fileMan.addItem(text: newText)
                 newText=""
             } label: {
                 Text("Add item")
             }
 
             NavigationView{
-                List(items){ item in
+                List($fileMan.items){ item in
                     NavigationLink(destination: DetailViewDemo(message: item.title)){
-                        Text(item.title)
+                        Text(item.title.wrappedValue)
                     }
                 }
             }
@@ -34,9 +32,12 @@ struct ListDemo: View {
     }
 }
 
-struct Item : Identifiable {
-    let id = UUID()
-    let title:String
+struct Item : Identifiable, Codable {
+    var id = UUID()
+    var title:String
+    init(title: String) {
+        self.title = title
+    }
 }
 
 struct ListDemo_Previews: PreviewProvider {

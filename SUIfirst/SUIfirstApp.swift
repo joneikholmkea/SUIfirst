@@ -16,7 +16,7 @@ struct SUIfirstApp: App {
         
         
         return WindowGroup(content: { () in
-            return DeleteMeView()
+            return ListDemo()
         })
     }
     
