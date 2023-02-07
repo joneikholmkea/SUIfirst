@@ -10,8 +10,15 @@ import SwiftUI
 @main
 struct SUIfirstApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+//        WindowGroup(content: () -> {
+//            DeleteMeView()
+//        })
+        
+        
+        return WindowGroup(content: { () in
+            return DeleteMeView()
+        })
     }
+    
+    
 }

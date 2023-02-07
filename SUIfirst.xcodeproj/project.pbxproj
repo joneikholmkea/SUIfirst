@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC06FACD2983FB700021E49B /* MyLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06FACC2983FB700021E49B /* MyLogic.swift */; };
+		FC06FACF2983FF7A0021E49B /* DeleteMe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06FACE2983FF7A0021E49B /* DeleteMe2.swift */; };
 		FC4E73FD29817066008AF866 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E73FC29817066008AF866 /* DemoView.swift */; };
 		FC4E73FF29818BA6008AF866 /* DeleteMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */; };
 		FC5AAD93293F3A4E001140AF /* ZenDots-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */; };
@@ -15,9 +17,13 @@
 		FC5DEC1A2939513900B6FCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DEC192939513900B6FCB9 /* ContentView.swift */; };
 		FC5DEC1C2939513B00B6FCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5DEC1B2939513B00B6FCB9 /* Assets.xcassets */; };
 		FC5DEC1F2939513B00B6FCB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5DEC1E2939513B00B6FCB9 /* Preview Assets.xcassets */; };
+		FC743C0B299233A700AF1CFB /* ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C09299233A700AF1CFB /* ListDemo.swift */; };
+		FC743C0C299233A700AF1CFB /* DetailViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC06FACC2983FB700021E49B /* MyLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogic.swift; sourceTree = "<group>"; };
+		FC06FACE2983FF7A0021E49B /* DeleteMe2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMe2.swift; sourceTree = "<group>"; };
 		FC4E73FC29817066008AF866 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMeView.swift; sourceTree = "<group>"; };
 		FC5AAD92293F3A4E001140AF /* ZenDots-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenDots-Regular.ttf"; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		FC5DEC192939513900B6FCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC5DEC1B2939513B00B6FCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5DEC1E2939513B00B6FCB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC743C09299233A700AF1CFB /* ListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDemo.swift; sourceTree = "<group>"; };
+		FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		FC5DEC162939513900B6FCB9 /* SUIfirst */ = {
 			isa = PBXGroup;
 			children = (
+				FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */,
+				FC743C09299233A700AF1CFB /* ListDemo.swift */,
 				FC5AAD94293F3BD0001140AF /* Info.plist */,
 				FC5AAD91293F3A3B001140AF /* fonts */,
 				FC5DEC172939513900B6FCB9 /* SUIfirstApp.swift */,
@@ -77,6 +87,8 @@
 				FC5DEC1D2939513B00B6FCB9 /* Preview Content */,
 				FC4E73FC29817066008AF866 /* DemoView.swift */,
 				FC4E73FE29818BA6008AF866 /* DeleteMeView.swift */,
+				FC06FACC2983FB700021E49B /* MyLogic.swift */,
+				FC06FACE2983FF7A0021E49B /* DeleteMe2.swift */,
 			);
 			path = SUIfirst;
 			sourceTree = "<group>";
@@ -160,8 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC743C0C299233A700AF1CFB /* DetailViewDemo.swift in Sources */,
 				FC5DEC1A2939513900B6FCB9 /* ContentView.swift in Sources */,
 				FC4E73FD29817066008AF866 /* DemoView.swift in Sources */,
+				FC743C0B299233A700AF1CFB /* ListDemo.swift in Sources */,
+				FC06FACD2983FB700021E49B /* MyLogic.swift in Sources */,
+				FC06FACF2983FF7A0021E49B /* DeleteMe2.swift in Sources */,
 				FC4E73FF29818BA6008AF866 /* DeleteMeView.swift in Sources */,
 				FC5AAD96293F5208001140AF /* InfoView.swift in Sources */,
 				FC5DEC182939513900B6FCB9 /* SUIfirstApp.swift in Sources */,
