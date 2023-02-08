@@ -14,12 +14,21 @@ struct ListDemo: View {
     var body: some View {
         VStack{
             TextField("Enter text", text: $newText)
-            Button {
-                fileMan.addItem(text: newText)
-                newText=""
-            } label: {
-                Text("Add item")
-            }
+            HStack{
+                Button {
+                    fileMan.addItem(text: newText)
+                    newText=""
+                } label: {
+                    Text("Add item")
+                }
+                Spacer()
+                Button {
+                    fileMan.saveToUserDefaults()
+                } label: {
+                    Text("Save")
+                }
+            }.padding(10)
+            
 
             NavigationView{
                 List($fileMan.items){ item in
@@ -30,6 +39,7 @@ struct ListDemo: View {
             }
         }
     }
+    
 }
 
 struct Item : Identifiable, Codable {

@@ -13,7 +13,7 @@ class MyFileManager: ObservableObject{
     
     @Published var items = [Item]()
     let arrayKey = "items"
-    let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as URL // Save in Documents
+    
     init() {
         //saveToFile()
         readFromUserDefaults()
@@ -49,6 +49,8 @@ class MyFileManager: ObservableObject{
         }
     }
     
+    
+    let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as URL // Save in Documents
     fileprivate func saveToFile() {
         let myURL = url.appendingPathComponent("fileName")       // define the URL of the file ; take care of sandboxing constraints
         let data = NSMutableData()

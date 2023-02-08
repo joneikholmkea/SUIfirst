@@ -11,7 +11,7 @@ struct DetailViewDemo: View {
     
     @Binding var message:String
     var body: some View {
-        TextField("Enter your name", text: $message)
+        TextField("", text: $message)
     }
 }
 
