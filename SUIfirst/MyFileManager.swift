@@ -9,6 +9,7 @@ import Foundation
 class MyFileManager: ObservableObject{
     
     let userDefaults = UserDefaults.standard
+    let fService = FirebaseService()
     var myArray: [String] = ["A", "B"]
     
     @Published var items = [Item]()
@@ -16,18 +17,21 @@ class MyFileManager: ObservableObject{
     
     init() {
         //saveToFile()
+        fService.startListener()
         readFromUserDefaults()
     }
     
     func addItem(text:String) {
         items.append(Item(title: text))
         saveToUserDefaults()
+        fService.addNote(text: text)
     }
     
     func saveToUserDefaults(){
         do {
             let encodedData = try JSONEncoder().encode(items)
             userDefaults.set(encodedData, forKey: arrayKey)
+            print("saved to userdefaults \(items)")
         } catch {
         }
     }

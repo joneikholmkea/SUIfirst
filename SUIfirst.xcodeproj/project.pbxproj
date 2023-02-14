@@ -20,6 +20,10 @@
 		FC743C0B299233A700AF1CFB /* ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C09299233A700AF1CFB /* ListDemo.swift */; };
 		FC743C0C299233A700AF1CFB /* DetailViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */; };
 		FC743C2A2992423600AF1CFB /* MyFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC743C292992423600AF1CFB /* MyFileManager.swift */; };
+		FC93075D299AF0E000FF53CB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC93075C299AF0E000FF53CB /* Note.swift */; };
+		FCC686AA299AEB300003030E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FCC686A9299AEB300003030E /* FirebaseFirestore */; };
+		FCC686AC299AEC8D0003030E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCC686AB299AEC8D0003030E /* GoogleService-Info.plist */; };
+		FCC686AE299AEDB70003030E /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC686AD299AEDB70003030E /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,9 @@
 		FC743C09299233A700AF1CFB /* ListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDemo.swift; sourceTree = "<group>"; };
 		FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewDemo.swift; sourceTree = "<group>"; };
 		FC743C292992423600AF1CFB /* MyFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileManager.swift; sourceTree = "<group>"; };
+		FC93075C299AF0E000FF53CB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		FCC686AB299AEC8D0003030E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCC686AD299AEDB70003030E /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC686AA299AEB300003030E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,8 @@
 		FC5DEC162939513900B6FCB9 /* SUIfirst */ = {
 			isa = PBXGroup;
 			children = (
+				FC93075B299AF0CC00FF53CB /* model */,
+				FCC686AB299AEC8D0003030E /* GoogleService-Info.plist */,
 				FC743C0A299233A700AF1CFB /* DetailViewDemo.swift */,
 				FC743C09299233A700AF1CFB /* ListDemo.swift */,
 				FC5AAD94293F3BD0001140AF /* Info.plist */,
@@ -92,6 +102,7 @@
 				FC06FACC2983FB700021E49B /* MyLogic.swift */,
 				FC06FACE2983FF7A0021E49B /* DeleteMe2.swift */,
 				FC743C292992423600AF1CFB /* MyFileManager.swift */,
+				FCC686AD299AEDB70003030E /* FirebaseService.swift */,
 			);
 			path = SUIfirst;
 			sourceTree = "<group>";
@@ -102,6 +113,14 @@
 				FC5DEC1E2939513B00B6FCB9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC93075B299AF0CC00FF53CB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FC93075C299AF0E000FF53CB /* Note.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +139,9 @@
 			dependencies = (
 			);
 			name = SUIfirst;
+			packageProductDependencies = (
+				FCC686A9299AEB300003030E /* FirebaseFirestore */,
+			);
 			productName = SUIfirst;
 			productReference = FC5DEC142939513900B6FCB9 /* SUIfirst.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +170,9 @@
 				Base,
 			);
 			mainGroup = FC5DEC0B2939513900B6FCB9;
+			packageReferences = (
+				FCC686A8299AEB300003030E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FC5DEC152939513900B6FCB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5DEC1F2939513B00B6FCB9 /* Preview Assets.xcassets in Resources */,
+				FCC686AC299AEC8D0003030E /* GoogleService-Info.plist in Resources */,
 				FC5DEC1C2939513B00B6FCB9 /* Assets.xcassets in Resources */,
 				FC5AAD93293F3A4E001140AF /* ZenDots-Regular.ttf in Resources */,
 			);
@@ -177,6 +203,7 @@
 			files = (
 				FC743C0C299233A700AF1CFB /* DetailViewDemo.swift in Sources */,
 				FC5DEC1A2939513900B6FCB9 /* ContentView.swift in Sources */,
+				FCC686AE299AEDB70003030E /* FirebaseService.swift in Sources */,
 				FC4E73FD29817066008AF866 /* DemoView.swift in Sources */,
 				FC743C0B299233A700AF1CFB /* ListDemo.swift in Sources */,
 				FC06FACD2983FB700021E49B /* MyLogic.swift in Sources */,
@@ -185,6 +212,7 @@
 				FC4E73FF29818BA6008AF866 /* DeleteMeView.swift in Sources */,
 				FC5AAD96293F5208001140AF /* InfoView.swift in Sources */,
 				FC5DEC182939513900B6FCB9 /* SUIfirstApp.swift in Sources */,
+				FC93075D299AF0E000FF53CB /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCC686A8299AEB300003030E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCC686A9299AEB300003030E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCC686A8299AEB300003030E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC5DEC0C2939513900B6FCB9 /* Project object */;
 }
