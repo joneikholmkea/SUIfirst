@@ -38,7 +38,6 @@ class MyFileManager: ObservableObject{
     
     func readFromUserDefaults(){
         if let savedData = userDefaults.object(forKey: arrayKey) as? Data {
-
             do{
                 // 2
                 let results = try JSONDecoder().decode([Item].self, from: savedData)

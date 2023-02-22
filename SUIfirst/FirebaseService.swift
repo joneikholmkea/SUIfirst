@@ -7,7 +7,8 @@
 
 import Foundation
 import Firebase
-//import FirebaseStorage
+import UIKit
+import FirebaseStorage
 class FirebaseService {
     private var db = Firestore.firestore()
 //    var storage = Storage.storage()
@@ -30,6 +31,36 @@ class FirebaseService {
 //            }
 //        }
 //    }
+    
+    
+    func downloadImage(){
+        let imageRef = storage.reference(withPath: "mountain.png")
+        imageRef.getData(maxSize: 5000000) { data, error in
+            if error == nil {
+                let image = UIImage(data: data!)
+                print(image?.description)
+                // save image in Note object
+            }else {
+                print("error downloading \(error.debugDescription)")
+            }
+        }
+    }
+    
+    func uploadImage(){
+        if let img = UIImage(named: "mountain"){
+            let data = img.pngData()! // forcefully unwrap
+            let metaData = StorageMetadata()
+            metaData.contentType = "image/png"
+            let ref = storage.reference().child("mountain.png")
+            ref.putData(data, metadata: metaData){ meta, error in
+                if error == nil {
+                    print("OK uploading image")
+                }else {
+                    print("Not OK uploading image")
+                }
+            }
+        }
+    }
     
     func addNote(text:String) {
         print("addNote called with \(text)")

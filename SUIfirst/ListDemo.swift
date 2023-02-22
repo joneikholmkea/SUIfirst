@@ -31,7 +31,7 @@ struct ListDemo: View {
             
 
             NavigationView{
-                List($fileMan.items){ item in
+                List($fileMan.items, editActions: .all){ item in
                     NavigationLink(destination: DetailViewDemo(message: item.title)){
                         Text(item.title.wrappedValue)
                     }
